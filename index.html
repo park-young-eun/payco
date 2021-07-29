@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , minimum-scale=1, maximum-scale=5">
+    <title>PAYCO</title>
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.mobile-1.5.0-rc1.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/imagelightbox.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!--메인페이지(MAIN)-->
+    <div data-role="page" id="main" class="main">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu.png" alt="menu"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" class="active" data-transition="fade">MAIN</a></li>
+                    <li><a href="#sub1" data-transition="pop">결제</a></li>
+                    <li><a href="#sub2" data-transition="slidefade">라이프</a></li>
+                    <li><a href="#sub3" data-transition="slidefade">금융</a></li>
+                </ul>
+            </div>
+            <!--햄버거 버튼 클릭하면 나오는 메뉴-->
+            <div class="nav">
+                <div class="close">
+                    <a href="#">
+                        <img src="img/close.png" alt="닫기">
+                    </a>
+                </div><!--닫기-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">결제/포인트</a>
+                            <ul class="sub">
+                                <li><a href="#">PAYCO결제</a></li>
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">QR결제/제로페이</a></li>
+                                <li><a href="#">제로페이 상품권</a></li>
+                                <li><a href="#">제로페이 QR체크인</a></li>
+                            </ul>
+                        </li><!--결제/포인트-->
+                        <li>
+                            <a href="#">송금</a>
+                            <ul class="sub">
+                                <li><a href="#">송금</a></li>
+                                <li><a href="#">해외송금</a></li>
+                                <li><a href="#">예약송금</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">자산관리</a>
+                            <ul class="sub">
+                                <li><a href="#">신용정보</a></li>
+                                <li><a href="#">계좌조회</a></li>
+                                <li><a href="#">카드조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">금융상품</a>
+                            <ul class="sub">
+                                <li><a href="#">카드</a></li>
+                                <li><a href="#">계좌</a></li>
+                                <li><a href="#">투자</a></li>
+                                <li><a href="#">대출</a></li>
+                                <li><a href="#">보험</a></li>
+                                <li><a href="#">한화크레딧</a></li>
+                                <li><a href="#">맞춤대출</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인증</a>
+                            <ul class="sub">
+                                <li><a href="#">PAYCO인증</a></li>
+                                <li><a href="#">OTP인증</a></li>
+                                <li><a href="#">QR코드 로그인</a></li>
+                                <li><a href="#">소속기관인증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">여행</a>
+                            <ul class="sub">
+                                <li><a href="#">환전지갑</a></li>
+                                <li><a href="#">환율알리미</a></li>
+                                <li><a href="#">해외현지결제</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">라이프</a>
+                            <ul class="sub">
+                                <li><a href="#">쇼핑적립</a></li>
+                                <li><a href="#">쇼핑정보</a></li>
+                                <li><a href="#">페이코오더</a></li>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">택배예약</a></li>
+                                <li><a href="#">오늘의운세</a></li>
+                                <li><a href="#">선물하기</a></li>
+                                <li><a href="#">매거진</a></li>
+                                <li><a href="#">택시호출</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">기타</a>
+                            <ul class="sub">
+                                <li><a href="#">결제 비밀번호 설정</a></li>
+                                <li><a href="#">소득공제/현금영수증</a></li>
+                                <li><a href="#">상품권/쿠폰 등록</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">사용가이드</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">가맹점찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu_img"><img src="img/menu_img.png" alt="하단캐릭터이미지"></div>
+            </div><!--nav-->
+        </div>
+        <!--메인페이지 콘텐츠-->
+        <div data-role="content">
+            <div class="visual">
+                <div class="swiper-container mySwiper mainswiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide s1"><a href="#"></a></div>
+                      <div class="swiper-slide s2"><a href="#"></a></div>
+                      <div class="swiper-slide s3"><a href="#"></a></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+            <div class="today">
+                <div class="today_txt">
+                    <div class="today_txt_img"><img src="img/today_icon.png" alt="지금만할인업아이콘"></div>
+                    <h1>지금만 할인업!</h1>
+                    <div class="today_txt_img"><img src="img/today_icon.png" alt="지금만할인업아이콘"></div>
+                </div>
+                <div class="today_img">
+                    <div class="today_img1"><a href="#"><img src="img/today1.png" alt="today1"></a></div>
+                    <div class="today_img2"><a href="#"><img src="img/today2.png" alt="today2"></a></div>
+                    <div class="today_img3"><a href="#"><img src="img/today3.png" alt="today3"></a></div>
+                </div>
+            </div>
+            <div class="event_tab">
+                <!-- 탭제목 -->
+                <div class="tab_title">
+                    <a href="#" class="t1">신규입점</a>
+                    <a href="#" class="t2">이벤트</a>
+                </div>
+                <!-- 탭내용 -->
+                <div class="tab_content">
+                    <div class="con1">
+                        <a href="#"><img src="img/event1.png" alt="이벤트1"></a>
+                    </div>
+                    <div class="con2">
+                        <a href="#"><img src="img/event2.png" alt="이벤트2"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <h1>오늘 <span>인기 급상승</span> 쿠폰</h1>
+                <div class="gall_area">
+                    <ul>
+                        <li><a href="img/1.png" data-imagelightbox="f">
+                            <img src="img/list1.png" alt="헬로네이처할인">
+                        </a></li>
+                        <li><a href="img/2.jpg" data-imagelightbox="f">
+                            <img src="img/list2.png" alt="듀먼할인">
+                        </a></li>
+                        <li><a href="img/3.jpg" data-imagelightbox="f">
+                            <img src="img/list3.png" alt="삼다수할인">
+                        </a></li>
+                        <li><a href="img/4.jpg" data-imagelightbox="f">
+                            <img src="img/list4.png" alt="어바웃펫할인">
+                        </a></li>
+                        <li><a href="img/5.jpg" data-imagelightbox="f">
+                            <img src="img/list5.png" alt="현대식품관할인">
+                        </a></li>
+                        <li><a href="img/6.jpg" data-imagelightbox="f">
+                            <img src="img/list6.png" alt="푸드장할인">
+                        </a></li>
+                    </ul>
+                </div>
+            </div><!--popup end-->
+        </div>
+        <div data-role="footer" class="footer">
+            <div class="f_logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="f_txt">
+                <p>사업자 : 엔에이치엔페이코(주) 대표자 : 정연훈<br>
+                    주소 : 경기도 성남시 분당구 삼평동 629 플레이뮤지엄<br>
+                    사업자 등록번호 : 563-81-00723<br>
+                    사업자 정보확인통신판매업신고번호 : 제2017-성남분당-0458호 호스팅서비스<br>
+                    TEL : 1544-6891 / Email: help@payco.com<br>
+                    <br>
+                    <span>© NHN PAYCO Corp. All Right Reserved.</span>
+                </p>
+            </div>
+        </div>
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/f1_home.png" alt="home"></a></li>
+                <li><a href="#"><img src="img/f2_top.png" alt="top"></a></li>
+                <li><a href="#"><img src="img/f3_card.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/f4_ser.png" alt="ser"></a></li>
+                <li><a href="#"><img src="img/f5_my.png" alt="my"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--첫번째 서브 페이지(결제)-->
+    <div data-role="page" id="sub1" class="sub1">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu.png" alt="menu"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="fade">MAIN</a></li>
+                    <li><a href="#sub1" class="active" data-transition="pop">결제</a></li>
+                    <li><a href="#sub2" data-transition="slidefade">라이프</a></li>
+                    <li><a href="#sub3" data-transition="slidefade">금융</a></li>
+                </ul>
+            </div>
+            <!--햄버거 버튼 클릭하면 나오는 메뉴-->
+            <div class="nav">
+                <div class="close">
+                    <a href="#">
+                        <img src="img/close.png" alt="닫기">
+                    </a>
+                </div><!--닫기-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">결제/포인트</a>
+                            <ul class="sub">
+                                <li><a href="#">PAYCO결제</a></li>
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">QR결제/제로페이</a></li>
+                                <li><a href="#">제로페이 상품권</a></li>
+                                <li><a href="#">제로페이 QR체크인</a></li>
+                            </ul>
+                        </li><!--결제/포인트-->
+                        <li>
+                            <a href="#">송금</a>
+                            <ul class="sub">
+                                <li><a href="#">송금</a></li>
+                                <li><a href="#">해외송금</a></li>
+                                <li><a href="#">예약송금</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">자산관리</a>
+                            <ul class="sub">
+                                <li><a href="#">신용정보</a></li>
+                                <li><a href="#">계좌조회</a></li>
+                                <li><a href="#">카드조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">금융상품</a>
+                            <ul class="sub">
+                                <li><a href="#">카드</a></li>
+                                <li><a href="#">계좌</a></li>
+                                <li><a href="#">투자</a></li>
+                                <li><a href="#">대출</a></li>
+                                <li><a href="#">보험</a></li>
+                                <li><a href="#">한화크레딧</a></li>
+                                <li><a href="#">맞춤대출</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인증</a>
+                            <ul class="sub">
+                                <li><a href="#">PAYCO인증</a></li>
+                                <li><a href="#">OTP인증</a></li>
+                                <li><a href="#">QR코드 로그인</a></li>
+                                <li><a href="#">소속기관인증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">여행</a>
+                            <ul class="sub">
+                                <li><a href="#">환전지갑</a></li>
+                                <li><a href="#">환율알리미</a></li>
+                                <li><a href="#">해외현지결제</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">라이프</a>
+                            <ul class="sub">
+                                <li><a href="#">쇼핑적립</a></li>
+                                <li><a href="#">쇼핑정보</a></li>
+                                <li><a href="#">페이코오더</a></li>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">택배예약</a></li>
+                                <li><a href="#">오늘의운세</a></li>
+                                <li><a href="#">선물하기</a></li>
+                                <li><a href="#">매거진</a></li>
+                                <li><a href="#">택시호출</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">기타</a>
+                            <ul class="sub">
+                                <li><a href="#">결제 비밀번호 설정</a></li>
+                                <li><a href="#">소득공제/현금영수증</a></li>
+                                <li><a href="#">상품권/쿠폰 등록</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">사용가이드</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">가맹점찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu_img"><img src="img/menu_img.png" alt="하단캐릭터이미지"></div>
+            </div><!--nav-->
+        </div><!--첫번째서브페이지의 header-->
+        <div data-role="content">
+            <div class="sub_visual">
+                
+            </div>
+        </div>
+        <div data-role="footer" class="footer">
+            <div class="f_logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="f_txt">
+                <p>사업자 : 엔에이치엔페이코(주) 대표자 : 정연훈<br>
+                    주소 : 경기도 성남시 분당구 삼평동 629 플레이뮤지엄<br>
+                    사업자 등록번호 : 563-81-00723<br>
+                    사업자 정보확인통신판매업신고번호 : 제2017-성남분당-0458호 호스팅서비스<br>
+                    TEL : 1544-6891 / Email: help@payco.com<br>
+                    <br>
+                    <span>© NHN PAYCO Corp. All Right Reserved.</span>
+                </p>
+            </div>
+        </div>
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/f1_home.png" alt="home"></a></li>
+                <li><a href="#"><img src="img/f2_top.png" alt="top"></a></li>
+                <li><a href="#"><img src="img/f3_card.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/f4_ser.png" alt="ser"></a></li>
+                <li><a href="#"><img src="img/f5_my.png" alt="my"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--두번째 서브 페이지 (라이프)-->
+    <div data-role="page" id="sub2" class="sub2">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu.png" alt="menu"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="fade">MAIN</a></li>
+                    <li><a href="#sub1" data-transition="pop">결제</a></li>
+                    <li><a href="#sub2" class="active" data-transition="slidefade">라이프</a></li>
+                    <li><a href="#sub3" data-transition="slidefade">금융</a></li>
+                </ul>
+            </div>
+            <!--햄버거 버튼 클릭하면 나오는 메뉴-->
+            <div class="nav">
+                <div class="close">
+                    <a href="#">
+                        <img src="img/close.png" alt="닫기">
+                    </a>
+                </div><!--닫기-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">결제/포인트</a>
+                            <ul class="sub">
+                                <li><a href="#">PAYCO결제</a></li>
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">QR결제/제로페이</a></li>
+                                <li><a href="#">제로페이 상품권</a></li>
+                                <li><a href="#">제로페이 QR체크인</a></li>
+                            </ul>
+                        </li><!--결제/포인트-->
+                        <li>
+                            <a href="#">송금</a>
+                            <ul class="sub">
+                                <li><a href="#">송금</a></li>
+                                <li><a href="#">해외송금</a></li>
+                                <li><a href="#">예약송금</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">자산관리</a>
+                            <ul class="sub">
+                                <li><a href="#">신용정보</a></li>
+                                <li><a href="#">계좌조회</a></li>
+                                <li><a href="#">카드조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">금융상품</a>
+                            <ul class="sub">
+                                <li><a href="#">카드</a></li>
+                                <li><a href="#">계좌</a></li>
+                                <li><a href="#">투자</a></li>
+                                <li><a href="#">대출</a></li>
+                                <li><a href="#">보험</a></li>
+                                <li><a href="#">한화크레딧</a></li>
+                                <li><a href="#">맞춤대출</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인증</a>
+                            <ul class="sub">
+                                <li><a href="#">PAYCO인증</a></li>
+                                <li><a href="#">OTP인증</a></li>
+                                <li><a href="#">QR코드 로그인</a></li>
+                                <li><a href="#">소속기관인증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">여행</a>
+                            <ul class="sub">
+                                <li><a href="#">환전지갑</a></li>
+                                <li><a href="#">환율알리미</a></li>
+                                <li><a href="#">해외현지결제</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">라이프</a>
+                            <ul class="sub">
+                                <li><a href="#">쇼핑적립</a></li>
+                                <li><a href="#">쇼핑정보</a></li>
+                                <li><a href="#">페이코오더</a></li>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">택배예약</a></li>
+                                <li><a href="#">오늘의운세</a></li>
+                                <li><a href="#">선물하기</a></li>
+                                <li><a href="#">매거진</a></li>
+                                <li><a href="#">택시호출</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">기타</a>
+                            <ul class="sub">
+                                <li><a href="#">결제 비밀번호 설정</a></li>
+                                <li><a href="#">소득공제/현금영수증</a></li>
+                                <li><a href="#">상품권/쿠폰 등록</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">사용가이드</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">가맹점찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu_img"><img src="img/menu_img.png" alt="하단캐릭터이미지"></div>
+            </div><!--nav-->
+        </div><!--두번째서브페이지의 header-->
+        <div data-role="content">
+            
+        </div>
+        <div data-role="footer" class="footer">
+            <div class="f_logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="f_txt">
+                <p>사업자 : 엔에이치엔페이코(주) 대표자 : 정연훈<br>
+                    주소 : 경기도 성남시 분당구 삼평동 629 플레이뮤지엄<br>
+                    사업자 등록번호 : 563-81-00723<br>
+                    사업자 정보확인통신판매업신고번호 : 제2017-성남분당-0458호 호스팅서비스<br>
+                    TEL : 1544-6891 / Email: help@payco.com<br>
+                    <br>
+                    <span>© NHN PAYCO Corp. All Right Reserved.</span>
+                </p>
+            </div>
+        </div>
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/f1_home.png" alt="home"></a></li>
+                <li><a href="#"><img src="img/f2_top.png" alt="top"></a></li>
+                <li><a href="#"><img src="img/f3_card.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/f4_ser.png" alt="ser"></a></li>
+                <li><a href="#"><img src="img/f5_my.png" alt="my"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--세번째 서브 페이지 (금융)-->
+    <div data-role="page" id="sub3" class="sub3">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu.png" alt="menu"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="fade">MAIN</a></li>
+                    <li><a href="#sub1" data-transition="pop">결제</a></li>
+                    <li><a href="#sub2" data-transition="slidefade">라이프</a></li>
+                    <li><a href="#sub3" class="active" data-transition="slidefade">금융</a></li>
+                </ul>
+            </div>
+            <!--햄버거 버튼 클릭하면 나오는 메뉴-->
+            <div class="nav">
+                <div class="close">
+                    <a href="#">
+                        <img src="img/close.png" alt="닫기">
+                    </a>
+                </div><!--닫기-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">결제/포인트</a>
+                            <ul class="sub">
+                                <li><a href="#">PAYCO결제</a></li>
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">QR결제/제로페이</a></li>
+                                <li><a href="#">제로페이 상품권</a></li>
+                                <li><a href="#">제로페이 QR체크인</a></li>
+                            </ul>
+                        </li><!--결제/포인트-->
+                        <li>
+                            <a href="#">송금</a>
+                            <ul class="sub">
+                                <li><a href="#">송금</a></li>
+                                <li><a href="#">해외송금</a></li>
+                                <li><a href="#">예약송금</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">자산관리</a>
+                            <ul class="sub">
+                                <li><a href="#">신용정보</a></li>
+                                <li><a href="#">계좌조회</a></li>
+                                <li><a href="#">카드조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">금융상품</a>
+                            <ul class="sub">
+                                <li><a href="#">카드</a></li>
+                                <li><a href="#">계좌</a></li>
+                                <li><a href="#">투자</a></li>
+                                <li><a href="#">대출</a></li>
+                                <li><a href="#">보험</a></li>
+                                <li><a href="#">한화크레딧</a></li>
+                                <li><a href="#">맞춤대출</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인증</a>
+                            <ul class="sub">
+                                <li><a href="#">PAYCO인증</a></li>
+                                <li><a href="#">OTP인증</a></li>
+                                <li><a href="#">QR코드 로그인</a></li>
+                                <li><a href="#">소속기관인증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">여행</a>
+                            <ul class="sub">
+                                <li><a href="#">환전지갑</a></li>
+                                <li><a href="#">환율알리미</a></li>
+                                <li><a href="#">해외현지결제</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">라이프</a>
+                            <ul class="sub">
+                                <li><a href="#">쇼핑적립</a></li>
+                                <li><a href="#">쇼핑정보</a></li>
+                                <li><a href="#">페이코오더</a></li>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">택배예약</a></li>
+                                <li><a href="#">오늘의운세</a></li>
+                                <li><a href="#">선물하기</a></li>
+                                <li><a href="#">매거진</a></li>
+                                <li><a href="#">택시호출</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">기타</a>
+                            <ul class="sub">
+                                <li><a href="#">결제 비밀번호 설정</a></li>
+                                <li><a href="#">소득공제/현금영수증</a></li>
+                                <li><a href="#">상품권/쿠폰 등록</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">사용가이드</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">가맹점찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu_img"><img src="img/menu_img.png" alt="하단캐릭터이미지"></div>
+            </div><!--nav-->
+        </div><!--세번째서브페이지의 header-->
+        <div data-role="content">
+            
+        </div>
+        <div data-role="footer" class="footer">
+            <div class="f_logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="f_txt">
+                <p>사업자 : 엔에이치엔페이코(주) 대표자 : 정연훈<br>
+                    주소 : 경기도 성남시 분당구 삼평동 629 플레이뮤지엄<br>
+                    사업자 등록번호 : 563-81-00723<br>
+                    사업자 정보확인통신판매업신고번호 : 제2017-성남분당-0458호 호스팅서비스<br>
+                    TEL : 1544-6891 / Email: help@payco.com<br>
+                    <br>
+                    <span>© NHN PAYCO Corp. All Right Reserved.</span>
+                </p>
+            </div>
+        </div>
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/f1_home.png" alt="home"></a></li>
+                <li><a href="#"><img src="img/f2_top.png" alt="top"></a></li>
+                <li><a href="#"><img src="img/f3_card.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/f4_ser.png" alt="ser"></a></li>
+                <li><a href="#"><img src="img/f5_my.png" alt="my"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
