@@ -92,7 +92,7 @@ div{box-sizing: border-box;}
 }
 .visual .swiper-slide{
     width: 100%;
-    height: 59vh;
+    height: 105vw;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -137,6 +137,7 @@ div{box-sizing: border-box;}
     justify-content: space-between;
 }
 .today .today_img a img{
+    width: 28vw;
     border-radius: 2vw;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6); 
 }
@@ -145,7 +146,7 @@ div{box-sizing: border-box;}
 .event_tab{
     width: 100%;
     margin-top: 10vw;
-    height: 52vh;
+    height: 100vw;
 }
 .event_tab .tab_title{
     display: flex;
@@ -168,6 +169,9 @@ div{box-sizing: border-box;}
 }
 .event_tab .tab_content>div{
     position: absolute;
+}
+.event_tab .tab_content>div a img{
+    width: 100%;
 }
 
 /* popup gallery 시작!~ */
@@ -197,10 +201,13 @@ div{box-sizing: border-box;}
     justify-content: space-around;
 }
 .gallery .gall_area ul li{
-    width: 44vw;
+    width: 50vw;
+    text-align: center;
     margin: 2.5vw 0;
 }
-
+.gallery .gall_area ul li a img{
+    width: 44vw;
+}
 
 #imagelightbox {
     position: fixed;
@@ -299,4 +306,135 @@ div{box-sizing: border-box;}
 }
 .main_icon ul li a{
     padding: 2vw 0 0 5vw;
+}
+
+/* 서브페이지1 결제 시작! */
+.sub1_visual{
+    width: 100%;
+}
+.sub1_visual .sub1_v_txt1{
+    width: 100%;
+    padding: 10vw 5vw;
+}
+.sub1_visual .sub1_v_txt1 ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.sub1_visual .sub1_v_txt1 ul li:first-child{
+    font-weight: 500;
+    color: #9b00ff;
+}
+.sub1_visual .sub1_v_txt1 ul li:last-child{
+    font-weight: 500;
+    color: #afafaf;
+}
+.sub1_visual .sub1_v_txt1 ul li:last-child:before{
+    content: "|";
+    margin-right: 3vw;
+}
+
+/* 서브페이지1 sub1_v */
+.sub1_visual .sub1_v{
+    width: 100%;
+}
+.sub1_visual .sub1_v .sub1_v_img{
+    width: 100%;
+    padding: 0 5vw;
+}
+.sub1_visual .sub1_v .sub1_v_img a img{
+    width: 90vw;
+}
+.sub1_visual .sub1_v .sub1_v_txt{
+    width: 90%;
+    padding: 3vw;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+}
+.sub1_visual .sub1_v .sub1_v_txt h5{
+    text-align: left;
+    font-size: 4vw;
+}
+.sub1_visual .sub1_v .sub1_v_txt h5 span{
+    font-size: 3.5vw;
+    color: #888;
+}
+.sub1_visual .sub1_v_txt2{
+    width: 100%;
+    text-align: center;
+    margin-top: 10vw;
+    margin-bottom: 50vw;
+}
+.sub1_visual .sub1_v_txt2 h3{
+    display: inline-block;
+    background-color: #afafaf;
+    padding: 2vw;
+    font-size: 3.5vw;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+.sub1_visual .sub1_v_txt2 p{
+    font-size: 3vw;
+    color: #888;
+    margin-top: 3vw;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* 서브페이지2 라이프 시작 */
+.sub2_c{width: 100%; margin-top: 5vw;}
+.sub2_c ul{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.sub2_c ul li a img{
+    width: 29vw;
+    padding: 2vw;
+}
+.sub2_txt{
+    width: 100%;
+    padding: 2vw;
+}
+.sub2_txt p{
+    font-size: 4vw;
+    font-weight: 700;
+    text-align: center;
+    padding: 3vw;
+    color: #9b00ff;
+    border: 2px solid #9b00ff;
+    border-radius: 2vw;
+    margin-bottom: 50vw;
+}
+.sub2_txt p:after{
+    content: "▼";
+    margin-left: 3vw;
+    font-size: 3.5vw;
+}
+
+/* 서브페이지3 금융시작 */
+.sub3_img{
+    width: 100%;
+    padding: 5vw;
+    margin-top: 5vw;
+}
+.sub3_img a img{
+    width: 100%;
+}
+.sub3_txt{
+    width: 100%;
+    padding: 0 5vw;
+}
+.sub3_txt h1{
+    font-size: 4vw;
+    font-weight: 700;
+}
+.sub3_txt ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+    font-weight: 500;
+    margin-bottom: 50vw;
 }
