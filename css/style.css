@@ -20,7 +20,11 @@ div{box-sizing: border-box;}
     width: 20vw;
 }
 .header .header1 .menu_btn{
-    width: 10vw;
+    width: 8vw;
+    margin-top: 1vw;
+}
+.header .header1 .menu_btn a img{
+    width: 8vw;
 }
 .header .header2{
     height: 40px;
@@ -53,11 +57,12 @@ div{box-sizing: border-box;}
     background-color: #9b00ff;
     display: none;
 }
-.nav .close{width: 100%;}
+.nav .close{width: 10vw;
+    float: right;}
 .nav .close a{
-    width: 10vw;
-    float: right;
+    margin-left: 2.5vw;
 }
+.nav .close a img{width: 7vw;}
 .nav nav{
     width: 100%;
     margin-top: 10vw;
