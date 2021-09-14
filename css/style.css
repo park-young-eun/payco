@@ -206,7 +206,7 @@ div{box-sizing: border-box;}
     justify-content: space-around;
 }
 .gallery .gall_area ul li{
-    width: 49.5vw;
+    width: 50vw;
     text-align: center;
     margin: 2.5vw 0;
 }
