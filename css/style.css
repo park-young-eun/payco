@@ -197,7 +197,7 @@ div{box-sizing: border-box;}
     padding: 0vw 2vw 0.5vw;
 }
 .gallery .gall_area{
-    width: 100vw;
+    width: 96vw;
     margin: 0 auto;
 }
 .gallery .gall_area ul{
@@ -206,7 +206,7 @@ div{box-sizing: border-box;}
     justify-content: space-around;
 }
 .gallery .gall_area ul li{
-    width: 50vw;
+    width: 45vw;
     text-align: center;
     margin: 2.5vw 0;
 }
