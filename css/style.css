@@ -394,6 +394,9 @@ div{box-sizing: border-box;}
     flex-flow: row wrap;
     justify-content: space-around;
 }
+.sub2_c ul li{
+    width:33%;
+}
 .sub2_c ul li a img{
     width: 29vw;
     padding: 2vw;
