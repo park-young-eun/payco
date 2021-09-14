@@ -130,7 +130,7 @@ div{box-sizing: border-box;}
 }
 .today .today_txt h1{
     color: #fff;
-    font-size: 5.8vw;
+    font-size: 5.9vw;
     font-weight: 700;
 }
 
@@ -206,7 +206,7 @@ div{box-sizing: border-box;}
     justify-content: space-around;
 }
 .gallery .gall_area ul li{
-    width: 48vw;
+    width: 49.5vw;
     text-align: center;
     margin: 2.5vw 0;
 }
